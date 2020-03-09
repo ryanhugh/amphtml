@@ -354,7 +354,7 @@ describes.realWin('DoubleClick Fast Fetch - Safeframe', realWinConfig, env => {
         'display:block!important;}';
       doc.head.appendChild(css);
       ampAd.appendChild(safeframeMock);
-      doubleclickImpl.iframe_ = safeframeMock;
+      doubleclickImpl.iframe = safeframeMock;
       safeframeHost.iframe_ = safeframeMock;
 
       const sendMessageStub = env.sandbox./*OK*/ stub(
@@ -406,7 +406,7 @@ describes.realWin('DoubleClick Fast Fetch - Safeframe', realWinConfig, env => {
         'display:block!important;}';
       doc.head.appendChild(css);
       ampAd.appendChild(safeframeMock);
-      doubleclickImpl.iframe_ = safeframeMock;
+      doubleclickImpl.iframe = safeframeMock;
       safeframeHost.iframe_ = safeframeMock;
 
       const sendMessageStub = env.sandbox./*OK*/ stub(
@@ -459,7 +459,7 @@ describes.realWin('DoubleClick Fast Fetch - Safeframe', realWinConfig, env => {
         'display:block!important;}';
       doc.head.appendChild(css);
       ampAd.appendChild(safeframeMock);
-      doubleclickImpl.iframe_ = safeframeMock;
+      doubleclickImpl.iframe = safeframeMock;
       safeframeHost.iframe_ = safeframeMock;
       const sendMessageStub = env.sandbox./*OK*/ stub(
         safeframeHost,
@@ -497,7 +497,7 @@ describes.realWin('DoubleClick Fast Fetch - Safeframe', realWinConfig, env => {
         'display:block!important;}';
       doc.head.appendChild(css);
       ampAd.appendChild(safeframeMock);
-      doubleclickImpl.iframe_ = safeframeMock;
+      doubleclickImpl.iframe = safeframeMock;
       safeframeHost.iframe_ = safeframeMock;
 
       // Scroll 100 px
